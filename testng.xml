@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AutomationTask"><test verbose="2" preserve-order="true" name="F:/Program Files/_vois/untitled"><classes>
+    <class name="Test.AuthenticateUser"><methods><include name="navigation"/>
+        <include name="FillingLoginForm"/></methods>
+    </class>
+    <class name="Test.CheckoutProcedure">
+        <methods>
+            <include name="ProceedToCheckOutSteps"/>
+        </methods>
+    </class>
+    <class name="Test.ConfirmOrder_BankWire">
+        <methods>
+        <include name="Click_on_pay_by_bank_wire"/>
+    </methods>
+    </class>
+    <class name="Test.CreateUser">
+        <methods>
+            <include name="navigation"/><include name="InsertingNewEmail"/>
+            <include name="fillingPersonalInfo"/>
+            <include name="fillingAddressInfo"/>
+        </methods>
+    </class>
+    <class name="Test.OrderValidation">
+        <methods>
+            <include name="View_the_Latest_Order"/>
+            <include name="Validate_Product_name"/>
+        </methods>
+    </class>
+    <class name="Test.SelectBlouses">
+        <methods>
+            <include name="SelectBlousesFromWomen"/>
+        </methods>
+    </class>
+    <class name="Test.SelectResultedProduct"><methods>
+        <include name="SelectProduct"/>
+    </methods>
+    </class>
+</classes>
+</test>
+</suite>
